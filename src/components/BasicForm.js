@@ -36,7 +36,12 @@ const BasicForm = (props) => {
     if (!fnameIsValid && !lnameIsValid && !emailIsValid) {
       return;
     }
-
+    console.log("Submitted!");
+    console.log(`
+    First Name: ${enteredFirstName}\n
+    Last Name: ${enteredLastName}\n
+    E-mail: ${enteredEmail}
+    `);
     fnameReset();
     lnameReset();
     emailReset();
